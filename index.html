@@ -4,28 +4,61 @@
     <meta charset="utf-8">
     <title>Sign up for Real Rock</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <nav>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app.js"></script>
+    <style>
+    body{
+       background-image: url("background.jpg");
+    }
+    button{
+      background-color: white;
+      font-size: 24px;
+      border-radius: 8px;
+      border:1px solid #174c9a;
+      transition-duration::0.4s;
+      cursor: pointer;
+      margin-bottom: 5%;
+    }
+    .form{
+      margin:auto;
+      margin-top: 10%;
+      width:50%;
+      text-align: center;
+      background-color:rgba(192, 192, 192, 0.5);
+      border: 2px black solid;
+      font-family: 'Dosis', sans-serif;
+    }
 
-  </nav>
+    </style>
+  </head>
+<div id="status">
+
+</div>
   <body>
-    <h1>Real Rock Magazine!</h1>
-    <div>
+    <div class = "form">
+        <h1>Real Rock Magazine!</h1>
         <h2>Create an Account:</h2>
         <h3>Full name:</h3>
-        <input type = "text" />
+        <input class ="inp" id="name" type = "text" />
         <h3>Email:</h3>
-        <input type= "email" />
+        <input class ="inp" id="email" type= "email" />
         <h3>Create a password:</h3>
-        <input type = "password" />
+        <input class ="inp" id="password"type = "password" />
         <h3>Verify your password:</h3>
-        <input type = "password" />
+        <input class ="inp" id="passwordVerify"type = "password" />
         <div>
           <br />
-            <input type="checkbox">Would you like to receive promotions and important news?</input>
+          <input id= "promotions" type="checkbox">Would you like to receive promotions and important news?</input>
         </div>
         <br />
-        <button class="submit"onclick="createUser()">Submit</button>
+        <br />
+        <button class="submit" onclick="createUser()">Submit</button>
     </div>
   </body>
 </html>
